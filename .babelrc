@@ -1,0 +1,15 @@
+{
+    "presets": ["@babel/env", "@babel/preset-react"],
+    "plugins": [
+        "react-hot-loader/babel", // react hot reload
+        "@babel/plugin-transform-runtime", // generators
+        ["@babel/plugin-proposal-decorators", { "legacy": true }], // class decorators
+        ["@babel/plugin-proposal-class-properties", { "loose": true }], // class decorators
+        "@babel/plugin-syntax-dynamic-import" // import() Promise
+    ],
+    "env": {
+        "test": {
+            "plugins": ["dynamic-import-node"] // Use dynamic import in Jest
+        }
+    }
+}

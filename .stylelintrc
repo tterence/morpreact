@@ -1,0 +1,9 @@
+{
+    "extends": ["stylelint-config-standard", "stylelint-config-css-modules"],
+    "rules": {
+        "font-family-no-missing-generic-family-keyword": null,
+        "value-keyword-case": ["lower", {
+            "ignoreProperties: ["composes"]
+        }]
+    }
+}
